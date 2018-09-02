@@ -2,6 +2,15 @@ import time
 
 
 def compare_speed_of_functions(input_to_func, function_list, exp_output):
+    """Quick Function to compare the speed of a list of functions
+    Args:
+        input_to_func (any): The input, that will be supplied to all functions in function_list
+        function_list (func list): List of functions to be compared
+        exp_output (any): Expected output of functions
+    Returns:
+        Prints a clean table showing timing results
+    """
+
     speed_dict = dict()
     longest_name = 0
     for func in function_list:
@@ -28,5 +37,5 @@ def display_results(speed_dict, longest_name):
     for pair in sorted_pairs:
         name = pair[0]
         t = pair[1]
-        print("{:<2} | {:<{}} | {:<10}".format(pos, name, longest_name, t))
+        print(" {:<2}| {:<{}} | {:<10}".format(pos, name, longest_name, t))
         pos += 1
