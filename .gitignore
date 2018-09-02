@@ -1,1 +1,5 @@
 joelib.code-workspace
+
+__pycache__
+
+main.py
