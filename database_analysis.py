@@ -2,11 +2,15 @@ import pandas as pd
 import numpy as np
 
 # TODO: Some sort of top analysis function for database type data
-# TODO: Some sort of top analysis function for timeseries type data
-# TODO: etc.
+# TODO: Heatmap of coorelations between all columns pairwise
+# TODO: Create nice plot for investigating correlation between 2 columns:
+# i.e scatter plot
+# best fit line
+# correlation value in title
+# extrapolation?
 
 
-def return_value_ranges(df_data, value_columns, many_duplicates=False):
+def return_value_ranges(df_data, value_columns):
     ranges_dict = dict()
 
     for col in list(df_data.columns.values):
